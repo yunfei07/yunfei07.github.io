@@ -1,10 +1,21 @@
 baseURL: "https://yunfei07.github.io/"
 title: Fei
 theme: PaperMod
-paginate: 20
+paginate: 5
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+defaultContentLanguage: "zh"
+languages:
+  zh:
+    languageName: "中文"
+    weight: 1
+    params:
+      date_format: "2006年1月2日"
 
 taxonomies:
     tag: tags
