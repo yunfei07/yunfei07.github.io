@@ -14,8 +14,6 @@ languages:
   zh:
     languageName: "中文"
     weight: 1
-    params:
-      date_format: "2006年1月2日"
 
 taxonomies:
     tag: tags
@@ -40,12 +38,12 @@ params:
     author: Fei
     googleAnalyticsID: "G-F0F90YHBQ8"
     images: ["cover.png"]
-    DateFormat: "January 2006"
+    DateFormat: "2006年1月2日"
     defaultTheme: light
     hideFooter: true
     disableThemeToggle: true
     ShowShareButtons: false
-    ShowReadingTime: false
+    ShowReadingTime: true
     disableSpecial1stPost: true
     disableAnchoredHeadings: true
     ShowPostNavLinks: false
@@ -55,9 +53,9 @@ params:
     MainSections: ["blog","books"]
     ShowToc: false
     disableScrollToTop: true
-    TocOpen: true
+    TocOpen: false
     ShowWordCount: false
-    UseHugoToc: true
+    UseHugoToc: false
     comments: false
     math: true
     profileMode:

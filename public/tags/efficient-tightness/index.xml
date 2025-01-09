@@ -10,14 +10,14 @@
       <link>http://localhost:1313/cover.png</link>
     </image>
     <generator>Hugo -- 0.136.1</generator>
-    <language>en</language>
+    <language>zh</language>
     <lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/efficient-tightness/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Business Cycles and How to Tame Them</title>
-      <link>http://localhost:1313/c5/</link>
+      <link>http://localhost:1313/books/1/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/c5/</guid>
+      <guid>http://localhost:1313/books/1/</guid>
       <description>This minicourse describes business cycles, develops a matching model to explain them, and discusses how monetary and fiscal policy can tame them.</description>
     </item>
   </channel>
