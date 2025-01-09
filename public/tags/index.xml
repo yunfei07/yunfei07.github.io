@@ -2,141 +2,141 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Fei</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://yunfei07.github.io/tags/</link>
     <description>Recent content in Tags on Fei</description>
     <image>
       <title>Fei</title>
-      <url>http://localhost:1313/cover.png</url>
-      <link>http://localhost:1313/cover.png</link>
+      <url>https://yunfei07.github.io/cover.png</url>
+      <link>https://yunfei07.github.io/cover.png</link>
     </image>
     <generator>Hugo -- 0.136.1</generator>
     <language>zh</language>
     <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yunfei07.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beveridge curve</title>
-      <link>http://localhost:1313/tags/beveridge-curve/</link>
+      <link>https://yunfei07.github.io/tags/beveridge-curve/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/beveridge-curve/</guid>
+      <guid>https://yunfei07.github.io/tags/beveridge-curve/</guid>
       <description></description>
     </item>
     <item>
       <title>business cycles</title>
-      <link>http://localhost:1313/tags/business-cycles/</link>
+      <link>https://yunfei07.github.io/tags/business-cycles/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/business-cycles/</guid>
+      <guid>https://yunfei07.github.io/tags/business-cycles/</guid>
       <description></description>
     </item>
     <item>
       <title>economic slack</title>
-      <link>http://localhost:1313/tags/economic-slack/</link>
+      <link>https://yunfei07.github.io/tags/economic-slack/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/economic-slack/</guid>
+      <guid>https://yunfei07.github.io/tags/economic-slack/</guid>
       <description></description>
     </item>
     <item>
       <title>efficient tightness</title>
-      <link>http://localhost:1313/tags/efficient-tightness/</link>
+      <link>https://yunfei07.github.io/tags/efficient-tightness/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/efficient-tightness/</guid>
+      <guid>https://yunfei07.github.io/tags/efficient-tightness/</guid>
       <description></description>
     </item>
     <item>
       <title>fiscal policy</title>
-      <link>http://localhost:1313/tags/fiscal-policy/</link>
+      <link>https://yunfei07.github.io/tags/fiscal-policy/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/fiscal-policy/</guid>
+      <guid>https://yunfei07.github.io/tags/fiscal-policy/</guid>
       <description></description>
     </item>
     <item>
       <title>matching model</title>
-      <link>http://localhost:1313/tags/matching-model/</link>
+      <link>https://yunfei07.github.io/tags/matching-model/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/matching-model/</guid>
+      <guid>https://yunfei07.github.io/tags/matching-model/</guid>
       <description></description>
     </item>
     <item>
       <title>monetary policy</title>
-      <link>http://localhost:1313/tags/monetary-policy/</link>
+      <link>https://yunfei07.github.io/tags/monetary-policy/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/monetary-policy/</guid>
+      <guid>https://yunfei07.github.io/tags/monetary-policy/</guid>
       <description></description>
     </item>
     <item>
       <title>unemployment gap</title>
-      <link>http://localhost:1313/tags/unemployment-gap/</link>
+      <link>https://yunfei07.github.io/tags/unemployment-gap/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/unemployment-gap/</guid>
+      <guid>https://yunfei07.github.io/tags/unemployment-gap/</guid>
       <description></description>
     </item>
     <item>
       <title>wealth in the utility</title>
-      <link>http://localhost:1313/tags/wealth-in-the-utility/</link>
+      <link>https://yunfei07.github.io/tags/wealth-in-the-utility/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wealth-in-the-utility/</guid>
+      <guid>https://yunfei07.github.io/tags/wealth-in-the-utility/</guid>
       <description></description>
     </item>
     <item>
       <title>zero lower bound</title>
-      <link>http://localhost:1313/tags/zero-lower-bound/</link>
+      <link>https://yunfei07.github.io/tags/zero-lower-bound/</link>
       <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/zero-lower-bound/</guid>
+      <guid>https://yunfei07.github.io/tags/zero-lower-bound/</guid>
       <description></description>
     </item>
     <item>
       <title>DMP model</title>
-      <link>http://localhost:1313/tags/dmp-model/</link>
+      <link>https://yunfei07.github.io/tags/dmp-model/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/dmp-model/</guid>
+      <guid>https://yunfei07.github.io/tags/dmp-model/</guid>
       <description></description>
     </item>
     <item>
       <title>frictional unemployment</title>
-      <link>http://localhost:1313/tags/frictional-unemployment/</link>
+      <link>https://yunfei07.github.io/tags/frictional-unemployment/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/frictional-unemployment/</guid>
+      <guid>https://yunfei07.github.io/tags/frictional-unemployment/</guid>
       <description></description>
     </item>
     <item>
       <title>job rationing</title>
-      <link>http://localhost:1313/tags/job-rationing/</link>
+      <link>https://yunfei07.github.io/tags/job-rationing/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/job-rationing/</guid>
+      <guid>https://yunfei07.github.io/tags/job-rationing/</guid>
       <description></description>
     </item>
     <item>
       <title>job vacancies</title>
-      <link>http://localhost:1313/tags/job-vacancies/</link>
+      <link>https://yunfei07.github.io/tags/job-vacancies/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/job-vacancies/</guid>
+      <guid>https://yunfei07.github.io/tags/job-vacancies/</guid>
       <description></description>
     </item>
     <item>
       <title>rationing unemployment</title>
-      <link>http://localhost:1313/tags/rationing-unemployment/</link>
+      <link>https://yunfei07.github.io/tags/rationing-unemployment/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/rationing-unemployment/</guid>
+      <guid>https://yunfei07.github.io/tags/rationing-unemployment/</guid>
       <description></description>
     </item>
     <item>
       <title>recessions</title>
-      <link>http://localhost:1313/tags/recessions/</link>
+      <link>https://yunfei07.github.io/tags/recessions/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/recessions/</guid>
+      <guid>https://yunfei07.github.io/tags/recessions/</guid>
       <description></description>
     </item>
     <item>
       <title>unemployment</title>
-      <link>http://localhost:1313/tags/unemployment/</link>
+      <link>https://yunfei07.github.io/tags/unemployment/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/unemployment/</guid>
+      <guid>https://yunfei07.github.io/tags/unemployment/</guid>
       <description></description>
     </item>
     <item>
       <title>wage rigidity</title>
-      <link>http://localhost:1313/tags/wage-rigidity/</link>
+      <link>https://yunfei07.github.io/tags/wage-rigidity/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/wage-rigidity/</guid>
+      <guid>https://yunfei07.github.io/tags/wage-rigidity/</guid>
       <description></description>
     </item>
   </channel>
