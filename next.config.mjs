@@ -11,6 +11,7 @@ const withMDX = nextMDX({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 
   async redirects() {
@@ -154,6 +155,7 @@ const nextConfig = {
   },
 
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
