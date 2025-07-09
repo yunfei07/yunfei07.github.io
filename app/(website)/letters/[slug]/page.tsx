@@ -7,8 +7,16 @@ import { formatDate, formatTimeAgo } from "@/lib/string";
 import Listicle from "@/components/ui/list/listicle";
 import CopyLinkButton from "./copy-link-button";
 
+export async function generateStaticParams() {
+  const letters = await getAllCollectionMeta("letters");
+
+  return letters.map((letter) => ({
+    slug: letter.slug,
+  }));
+}
+
 const getPageContent = async (slug: string) => {
-  "use server";
+  // "use server";
 
   const { meta, content } = await getCollectionBySlug(slug, "letters");
 
@@ -16,7 +24,7 @@ const getPageContent = async (slug: string) => {
 };
 
 const fetchLetter = async (slug: string) => {
-  "use server";
+  // "use server";
 
   try {
     const res = await axios.get(`http://localhost:3000/api/letters/${slug}`);

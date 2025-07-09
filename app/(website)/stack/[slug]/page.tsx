@@ -3,10 +3,16 @@ import BackLink from "@/components/ui/back-link";
 
 import { Stack, Params } from "@/types/cms";
 import Listicle from "@/components/ui/list/listicle";
-import Feedback from "@/components/ui/feedback";
 
-import { sendEmail } from "@/lib/resend";
 import { notFound } from "next/navigation";
+
+export async function generateStaticParams() {
+  const sks = await getAllCollectionMeta("stack");
+
+  return sks.map((sk) => ({
+    slug: sk.slug,
+  }));
+}
 
 const getPageContent = async (slug: string) => {
   const { meta, content }: { meta: Stack; content: any } =
@@ -33,22 +39,22 @@ export async function generateMetadata({ params }: { params: Params }) {
   };
 }
 
-async function sendFeedback(feedback: string, stack: string) {
-  "use server";
+// async function sendFeedback(feedback: string, stack: string) {
+//   "use server";
 
-  const { data, error } = await sendEmail(
-    "cole@colecaccamise.com",
-    `New Feedback from ${stack}`,
-    <>
-      <h1>New feedback from {stack}</h1>
-      <p>Feedback: {feedback}</p>
-    </>,
-  );
+//   const { data, error } = await sendEmail(
+//     "cole@colecaccamise.com",
+//     `New Feedback from ${stack}`,
+//     <>
+//       <h1>New feedback from {stack}</h1>
+//       <p>Feedback: {feedback}</p>
+//     </>,
+//   );
 
-  if (error) {
-    throw new Error("Oops, something went wrong. Can you try again?");
-  }
-}
+//   if (error) {
+//     throw new Error("Oops, something went wrong. Can you try again?");
+//   }
+// }
 
 const Page = async ({ params }: { params: Params }) => {
   const { meta, content }: { meta: Stack; content: any } = await getPageContent(
@@ -70,12 +76,11 @@ const Page = async ({ params }: { params: Params }) => {
       </div>
       <div className="container flex flex-col gap-6 py-4">{content}</div>
 
-      <Feedback
+      {/* <Feedback
         stack={meta.name}
         feedbackText={meta.feedback_text}
         feedbackPreview={meta.feedback_preview}
-        handleSendFeedback={sendFeedback}
-      />
+      /> */}
 
       {stack.length > 0 && (
         <div className="flex flex-col gap-2">

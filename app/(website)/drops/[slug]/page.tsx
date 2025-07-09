@@ -20,6 +20,14 @@ import { capitalize } from "@/lib/string";
 import BackLink from "@/components/ui/back-link";
 import Listicle from "@/components/ui/list/listicle";
 
+export async function generateStaticParams() {
+  const drops = await getAllCollectionMeta("drops");
+
+  return drops.map((drop) => ({
+    slug: drop.slug,
+  }));
+}
+
 const getPageContent = async (slug: string) => {
   const { meta, content }: { meta: Drop; content: any } =
     await getCollectionBySlug(slug, "drops");

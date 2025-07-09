@@ -1,4 +1,4 @@
-"use server";
+// "use server";
 
 import fs from "fs";
 import path from "path";
@@ -28,7 +28,7 @@ const getItemsArray = (collection: string) => {
 
 // helpers
 export const getCollectionBySlug = async (slug: string, collection: string) => {
-  "use server";
+  // "use server";
 
   try {
     const realSlug = slug.replace(/\.mdx$/, "");

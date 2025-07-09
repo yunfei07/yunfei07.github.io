@@ -1,9 +1,17 @@
-import { getCollectionBySlug } from "@/lib/mdx";
+import { getCollectionBySlug, getAllCollectionMeta } from "@/lib/mdx";
 import BackLink from "@/components/ui/back-link";
 import { Params } from "@/types/cms";
 
+export async function generateStaticParams() {
+  const jobs = await getAllCollectionMeta("jobs");
+
+  return jobs.map((job) => ({
+    slug: job.slug,
+  }));
+}
+
 const getPageContent = async (slug: string) => {
-  "use server";
+  // "use server";
 
   const { meta, content } = await getCollectionBySlug(slug, "jobs");
 
