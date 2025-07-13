@@ -25,7 +25,7 @@ export default function NavigationMenu({
     >
       <div className="flex w-full items-center justify-between">
         <Link href="/" className="flex select-none flex-col hover:opacity-90">
-          <span>Cole Caccamise</span>
+          <span>Fei</span>
           <span className="text-low-contrast-text">Software Engineer</span>
         </Link>
 

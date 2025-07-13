@@ -11,7 +11,7 @@ export default function Footer() {
 					className='hover:opacity-90'
 					href='https://caccamedia.com?utm_source=website&utm_medium=footer-link'
 				>
-					Caccamedia
+					Fei
 				</Link>
 			</span>
 		</footer>

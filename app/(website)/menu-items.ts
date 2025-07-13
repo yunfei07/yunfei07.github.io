@@ -1,34 +1,14 @@
 export const menuItems: { href: string; name: string; new?: boolean }[] = [
   {
     href: "/",
-    name: "Home",
-  },
-  {
-    href: "/#connect",
-    name: "Contact",
+    name: "首页",
   },
   {
     href: "/letters",
-    name: "Letters",
-  },
-  {
-    href: "/drops",
-    name: "Drops",
+    name: " 文章",
   },
   {
     href: "/stack",
-    name: "Stack",
-  },
-  {
-    href: "/vault",
-    name: "Vault",
-  },
-  {
-    href: "/links",
-    name: "Links",
-  },
-  {
-    href: "/jobs",
-    name: "Jobs",
-  },
+    name: "更多",
+  }
 ];

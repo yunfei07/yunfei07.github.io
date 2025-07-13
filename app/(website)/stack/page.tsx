@@ -8,8 +8,8 @@ export default async function StackPage() {
   return (
     <div className="flex flex-col gap-16">
       <div className="flex flex-col gap-4">
-        <h1 className="text-3xl font-medium">Stack</h1>
-        <p>Tools & products I use daily.</p>
+        <h1 className="text-3xl font-medium">工具与产品</h1>
+        <p>介绍一些我日常使用的工具和产品。</p>
       </div>
 
       <div className="flex flex-col gap-4">

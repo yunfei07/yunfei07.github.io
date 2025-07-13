@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://colecaccamise.com"),
+  metadataBase: new URL("https://yunfei07.github.io"),
   title: "Newsletter",
   description:
-    "Newsletters from Cole Caccamise about growing a one person business.",
+    "Newsletters from Fei about growing a one person business.",
   openGraph: {
     title: "Newsletter",
     description:
-      "Newsletters from Cole Caccamise about growing a one person business.",
+      "Newsletters from Fei about growing a one person business.",
   },
 };
 

@@ -20,8 +20,8 @@ export default function Sidebar({
         <div className="flex w-full flex-col items-start gap-4 text-left">
           <Avatar />
           <div>
-            <span className="text-lg font-medium">Cole Caccamise</span>
-            <p>Software Engineer</p>
+            <span className="text-lg font-medium">Fei</span>
+            <p>Full Stack Engineer</p>
           </div>
         </div>
 

@@ -1,124 +1,73 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faLinkedin,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+// import {
+//   faEvernote,
+// } from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import { getAllCollectionMeta } from "@/lib/mdx";
 import ListContainer from "@/components/ui/list/list-container";
 import Listicle from "@/components/ui/list/listicle";
-import NewsletterSignup from "@/components/ui/newsletter-signup";
-import Avatar from "@/components/ui/avatar";
+// import NewsletterSignup from "@/components/ui/newsletter-signup";
+// import Avatar from "@/components/ui/avatar";
 
 export default async function Home() {
-  const drops = await getAllCollectionMeta("drops", 3);
+  // const drops = await getAllCollectionMeta("drops", 3);
   const stack = await getAllCollectionMeta("stack", 3);
   const letters = await getAllCollectionMeta("letters", 3);
 
   const ventures = [
     {
-      name: "Creator Kiwi",
-      description: "Turn your YouTube videos into revenue.",
-      url: "https://creator.kiwi/cole",
-    },
-    {
-      name: "YouTube | Cole Caccamise",
+      name: "YouTube | Fei",
       description: "Aesthetic tech videos.",
-      url: "https://youtube.com/@colecaccamise",
+      url: "https://youtube.com/",
     },
   ];
 
   const socials = [
-    {
-      url: "https://caccamise.link/x",
-      icon: faXTwitter,
-    },
-    {
-      url: "https://caccamise.link/ig",
-      icon: faInstagram,
-    },
-    {
-      url: "https://caccamise.link/in",
-      icon: faLinkedin,
-    },
+    // {
+    //   url: "https://caccamise.link/x",
+    //   icon: faXTwitter,
+    // },
   ];
 
   return (
     <>
       <main className="flex flex-col gap-16 md:gap-24">
+        {/* <div className="flex flex-col gap-4">
+          <h1 className="text-3xl font-medium">欢迎来到我的个人网站</h1>
+          <p>这是一个展示我作品和分享我想法的地方。</p>
+        </div> */}
         <div className="flex flex-col gap-4">
-          <div className="block md:hidden">
-            <Avatar width={56} height={56} />
-          </div>
-          <div className="flex flex-col gap-2">
-            <span className="font-medium">About</span>
-            <p>
-              Helping creators become profitable entrepreneurs at{" "}
-              <Link href="https://creator.kiwi/cole">Creator Kiwi</Link>.
-            </p>
-            <p>
-              I enjoy sharing my experiences{" "}
-              <Link href="https://caccamise.link/youtube">through video</Link>{" "}
-              and <Link href="/letters">written word</Link>.
-            </p>
-          </div>
+          <h2 className="text-2xl font-medium">关于我</h2>
+          <p>我是一名全栈开发工程师，专注于分享我的经验和见解。</p>
         </div>
 
-        <NewsletterSignup
-          formId="5584232"
-          title="The Letter"
-          description={
-            <span>
-              Documenting the process of{" "}
-              <Link href="/letters" className="hover:opacity-90">
-                building my businesses
-              </Link>
-              . Sharing lessons I learn and interesting resources I find.
-            </span>
-          }
-        />
-
-        <ListContainer
-          title="Ventures"
-          description="Businesses I'm actively working on"
-        >
-          <Listicle collection={ventures} kind="ventures" />
-        </ListContainer>
-
-        <ListContainer
-          title="Recent Letters"
-          description="Writing about my experiences and learnings"
-        >
+        <ListContainer title="近期文章" description="记录我的经验和学习笔记">
           <Listicle collection={letters} kind="letters" />
         </ListContainer>
 
-        <ListContainer
-          title="Featured Drops"
-          description="Premium digital products I’ve created recently"
-        >
-          <Listicle collection={drops} kind="drops" />
-        </ListContainer>
-
-        <ListContainer
-          title="Stack"
-          description="Tools and products I use daily"
-        >
+        <ListContainer title="技术栈" description="日常开发中使用的工具和技术">
           <Listicle collection={stack} kind="stack" />
         </ListContainer>
 
-        <div id="connect" className="flex flex-col gap-4">
+        {/* <div id="connect" className="flex flex-col gap-4">
           <div className="flex flex-col gap-2">
-            <span>Connect</span>
+            <span>联系方式</span>
             <p>
-              Reach me at{" "}
+              如果你想和我交流或合作，可以通过以下方式与我联系：
+              <br />
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className="mr-2 inline-block"
+                width={16}
+                height={16}
+              />
               <Link
                 className="hover:opacity-90"
-                href="mailto:cole@colecaccamise.com"
+                href="mailto:cole@yunfei07.github.io"
               >
-                cole@colecaccamise.com
+                yangyunfei07@gmail.com
               </Link>{" "}
-              or connect on social media below.
             </p>
           </div>
 
@@ -133,7 +82,7 @@ export default async function Home() {
               </Link>
             ))}
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   );

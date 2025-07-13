@@ -27,6 +27,30 @@ export function formatDate(timestamp: string) {
   }
 }
 
+// 格式化时间戳为中文格式时间年-月-日
+export function formatDateCN(timestamp: string) {
+  if (!timestamp) {
+    return "";
+  }
+
+  try {
+    const date = new Date(timestamp + "T13:00:00Z");
+
+    if (isNaN(date.getTime())) {
+      throw new Error("Invalid date");
+    }
+
+    return date.toLocaleDateString("zh-CN", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    });
+  } catch (error) {
+    console.error("Invalid timestamp format:", timestamp);
+    return timestamp;
+  }
+}
+
 export function formatTimeAgo(timestamp: string) {
   if (!timestamp) {
     return "";

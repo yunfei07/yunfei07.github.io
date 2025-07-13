@@ -30,31 +30,14 @@ const getPageContent = async (slug: string) => {
 export async function generateMetadata({ params }: { params: Params }) {
   const { meta }: { meta: Stack } = await getPageContent(params.slug);
   return {
-    title: `${meta.name} | Cole Caccamise`,
+    title: `${meta.name} | Fei`,
     description: meta.seo_description,
     openGraph: {
-      title: `${meta.name} | Cole Caccamise`,
+      title: `${meta.name} | Fei`,
       description: meta.seo_description,
     },
   };
 }
-
-// async function sendFeedback(feedback: string, stack: string) {
-//   "use server";
-
-//   const { data, error } = await sendEmail(
-//     "cole@colecaccamise.com",
-//     `New Feedback from ${stack}`,
-//     <>
-//       <h1>New feedback from {stack}</h1>
-//       <p>Feedback: {feedback}</p>
-//     </>,
-//   );
-
-//   if (error) {
-//     throw new Error("Oops, something went wrong. Can you try again?");
-//   }
-// }
 
 const Page = async ({ params }: { params: Params }) => {
   const { meta, content }: { meta: Stack; content: any } = await getPageContent(
@@ -65,26 +48,15 @@ const Page = async ({ params }: { params: Params }) => {
 
   return (
     <div className="flex flex-col gap-8">
-      <BackLink href="/stack">Back</BackLink>
+      <BackLink href="/stack">返回</BackLink>
       <div className="flex flex-col gap-4 border-b border-ui-component-default pb-8">
         <h1 className="text-4xl font-medium">{meta.name}</h1>
-        <span className="text-low-contrast-text">{meta.description}</span>
-        <span className="text-sm">
-          Note: I may earn a commission from some links (thank you for
-          supporting me).
-        </span>
       </div>
       <div className="container flex flex-col gap-6 py-4">{content}</div>
 
-      {/* <Feedback
-        stack={meta.name}
-        feedbackText={meta.feedback_text}
-        feedbackPreview={meta.feedback_preview}
-      /> */}
-
       {stack.length > 0 && (
         <div className="flex flex-col gap-2">
-          <span className="text-2xl font-medium">You may also like</span>
+          <span className="text-2xl font-medium">相关文章</span>
           <Listicle collection={stack} kind="stack" />
         </div>
       )}

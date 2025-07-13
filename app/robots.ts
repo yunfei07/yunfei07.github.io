@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
 			allow: '/',
 			disallow: '/private/',
 		},
-		sitemap: 'https://colecaccamise.com/sitemap.xml',
+		sitemap: 'https://yunfei07.github.io/sitemap.xml',
 	};
 }

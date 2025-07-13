@@ -28,7 +28,7 @@ export default function Listicle({
           href={`/${kind}`}
           className="group flex items-center gap-1 text-low-contrast-text transition-all duration-300 ease-in-out hover:text-high-contrast-text"
         >
-          View all
+          查看全部
           <span className="transition-transform group-hover:translate-x-1">
             <ArrowRightIcon />
           </span>{" "}

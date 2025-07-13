@@ -32,7 +32,7 @@ export default function NewsletterSignup({
   const plausible = usePlausible();
 
   // TODO: add customers to lemon squeezy discount form, then use resend to send them a programatically gnerated discount code -- implement convertkit unsubscribes
-  // You are receiving this message because you purchased/downloaded a product from Cole Caccamise.
+  // You are receiving this message because you purchased/downloaded a product from Fei.
 
   const handleSignup = async () => {
     if (!email) {

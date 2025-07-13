@@ -1,4 +1,4 @@
-import { formatDate } from "@/lib/string";
+import { formatDate, formatDateCN } from "@/lib/string";
 import { ArrowTopRightIcon, DotFilledIcon } from "@radix-ui/react-icons";
 
 type AllowedKinds = "drops" | "letters" | "stack" | "ventures" | "jobs";
@@ -32,7 +32,7 @@ export default function ListDescription({
       <div className="flex w-full flex-col items-start justify-between gap-1 md:flex-row md:items-center">
         <span>{item.name}</span>
         <span className="font-regular text-sm text-low-contrast-text">
-          {formatDate(item.published)}
+          {formatDateCN(item.published)}
         </span>
       </div>
     );

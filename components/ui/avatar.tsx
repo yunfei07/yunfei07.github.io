@@ -15,7 +15,7 @@ export default function Avatar({
       width={width}
       height={height}
       className="rounded-full"
-      alt="Cole Caccamise"
+      alt="Fei"
     />
   );
 }

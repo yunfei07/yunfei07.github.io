@@ -9,21 +9,21 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://colecaccamise.com"),
+  metadataBase: new URL("https://yunfei07.github.io"),
   title: {
-    template: "%s | Cole Caccamise",
-    default: "Cole Caccamise - Software Engineer & Entrepreneur",
+    template: "%s | Fei",
+    default: "Fei - Full Stack Software Engineer & AI Creator",
   },
-  description: "Cole Caccamise is a software engineer and entrepreneur.",
+  description: "Fei is a full stack software engineer and AI creator.",
   twitter: {
     title: {
-      template: "%s | Cole Caccamise",
-      default: "Cole Caccamise - Software Engineer & Entrepreneur",
+      template: "%s | Fei",
+      default: "Fei - Full Stack Software Engineer & AI Creator",
     },
-    description: "Cole Caccamise is a software engineer and entrepreneur.",
+    description: "Fei is a full stack software engineer and AI creator.",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/opengraph-image.jpg",
         width: 800,
         height: 600,
       },
@@ -31,16 +31,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: {
-      template: "%s | Cole Caccamise",
-      default: "Cole Caccamise - Software Engineer & Entrepreneur",
+      template: "%s | Fei",
+      default: "Fei - Full Stack Software Engineer & AI Creator",
     },
-    description: "Cole Caccamise is a software engineer and entrepreneur.",
+    description: "Fei is a full stack software engineer and AI creator.",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/opengraph-image.jpg",
         width: 800,
         height: 600,
-        alt: "Cole Caccamise",
+        alt: "Fei",
       },
     ],
   },
@@ -64,7 +64,7 @@ export default function RootLayout({
         />
         <Analytics />
         <PlausibleProvider
-          domain="colecaccamise.com"
+          domain="yunfei07.github.io"
           trackOutboundLinks={true}
           taggedEvents={true}
         >
