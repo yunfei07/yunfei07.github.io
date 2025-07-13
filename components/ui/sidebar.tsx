@@ -3,7 +3,6 @@
 import { usePathname } from "next/navigation";
 import SidebarLink from "./sidebar-link";
 import Avatar from "./avatar";
-
 export default function Sidebar({
   menuLinks,
 }: {

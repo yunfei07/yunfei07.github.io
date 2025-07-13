@@ -5,6 +5,7 @@ import "./globals.css";
 import "@/app/styles/btn.css";
 import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/react";
+// import { ThemeProvider } from "@/lib/theme/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,7 +63,7 @@ export default function RootLayout({
             className: "select-none",
           }}
         />
-        <Analytics />
+        {/* <Analytics /> */}
         <PlausibleProvider
           domain="yunfei07.github.io"
           trackOutboundLinks={true}

@@ -67,20 +67,24 @@ const Page = async ({ params }: { params: Params }) => {
             <div className="flex items-center justify-between">
               <h1 className="text-2xl">{meta.name}</h1>
             </div>
-            <span className="text-low-contrast-text">{meta.description}</span>
+            {/* <span className="text-low-contrast-text">{meta.description}</span> */}
           </div>
           <span className="text-sm text-low-contrast-text">
             {formatDateCN(meta.published || "")}
           </span>
         </div>
 
-        <div className="letter-content flex flex-col gap-6">{content}</div>
+        <div className="letter-content flex flex-col gap-6 text-high-contrast-text">
+          {content}
+        </div>
       </div>
 
-      <div className="flex flex-col gap-2">
-        <span className="text-2xl font-medium">相关内容</span>
-        <Listicle collection={letters} kind="letters" />
-      </div>
+      {letters && letters.length > 0 && (
+        <div className="flex flex-col gap-2">
+          <span className="text-2xl font-medium">相关内容</span>
+          <Listicle collection={letters} kind="letters" />
+        </div>
+      )}
     </div>
   );
 };
