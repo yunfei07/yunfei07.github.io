@@ -6,21 +6,21 @@ published: 2025-07-14
 
 最佳 kimi 发布了 1T 参数的大模型 k2，号称是目前最大的开源模型。我在本地安装了 claude-code-cli，使用起来非常方便。以下是整个过程：
 
-## 环境准备
+### 环境准备
 
- 1、https://platform.moonshot.cn 注册账号和申请 API Key
- 2、安装 node.js 18+
- 3、Claude  AI 平台账号
+ - https://platform.moonshot.cn 注册账号和申请 API Key
+ - 安装 node.js 18+
+ - Claude  AI 平台账号
 
-## 安装 Claude Code Cli
+### 安装 Claude Code Cli
 
-```
+```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-## 设置环境变量
+### 设置环境变量
 
-```
+```bash
 cat << 'EOF' >> ~/.zshrc
 
 # claude code
@@ -30,7 +30,7 @@ EOF
 ```
 $YOUR_API_KEY 就是我们在环境准备阶段，在月之暗面后台申请的 API Key。
 
-## 使用 claude-code-cli
+### 使用 claude-code-cli
 
 - 新建一个目录，进入该目录
 - 执行 `claude` 命令,第一次使用会需要登录 claude 平台，会自动跳转到浏览器进行登录。
