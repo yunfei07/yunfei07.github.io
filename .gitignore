@@ -40,3 +40,8 @@ next-env.d.ts
 # ide
 .idea
 .vscode
+.kiro
+
+
+test-*
+SYSTEM_*

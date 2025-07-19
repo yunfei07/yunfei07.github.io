@@ -5,7 +5,8 @@ import "./globals.css";
 import "@/app/styles/btn.css";
 import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/react";
-// import { ThemeProvider } from "@/lib/theme/theme-context";
+import { ThemeScript } from "@/components/ui/theme-script";
+import { ThemeProvider } from "@/lib/theme/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,8 +55,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <ThemeScript />
+      </head>
       <body
-        className={`${inter.className} dark:dark overflow-x-hidden bg-app-bg text-high-contrast-text`}
+        className={`${inter.className} overflow-x-hidden bg-app-bg text-high-contrast-text`}
       >
         <Toaster
           toastOptions={{
@@ -64,13 +68,15 @@ export default function RootLayout({
           }}
         />
         {/* <Analytics /> */}
-        <PlausibleProvider
-          domain="yunfei07.github.io"
-          trackOutboundLinks={true}
-          taggedEvents={true}
-        >
-          <>{children}</>
-        </PlausibleProvider>
+        <ThemeProvider>
+          <PlausibleProvider
+            domain="yunfei07.github.io"
+            trackOutboundLinks={true}
+            taggedEvents={true}
+          >
+            <>{children}</>
+          </PlausibleProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
