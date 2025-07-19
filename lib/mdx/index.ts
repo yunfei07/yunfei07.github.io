@@ -9,8 +9,19 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Drop, Letter, Stack, Job } from "@/types/cms";
 import Button from "@/components/ui/button";
+import rehypePrettyCode from "rehype-pretty-code";
 
 type Frontmatter = Drop | Letter | Stack | Job;
+
+// Configure rehype-pretty-code options for syntax highlighting
+const rehypePrettyCodeOptions = {
+  theme: {
+    dark: 'github-dark',
+    light: 'github-light'
+  },
+  keepBackground: false, // Use our custom backgrounds
+  defaultLang: 'plaintext'
+};
 
 const getItemsArray = (collection: string) => {
   if (collection === "drops") {
@@ -42,7 +53,14 @@ export const getCollectionBySlug = async (slug: string, collection: string) => {
     const { frontmatter, content }: { frontmatter: Frontmatter; content: any } =
       await compileMDX({
         source: fileContent,
-        options: { parseFrontmatter: true },
+        options: { 
+          parseFrontmatter: true,
+          mdxOptions: {
+            rehypePlugins: [
+              [rehypePrettyCode, rehypePrettyCodeOptions]
+            ]
+          }
+        },
         components: { VideoPlayer, Link, CustomImage, Button },
       });
 

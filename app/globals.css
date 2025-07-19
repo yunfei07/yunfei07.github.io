@@ -17,9 +17,229 @@ kbd {
   @apply rounded-md bg-ui-component-default p-1 text-sm text-low-contrast-text;
 }
 
+/* Inline code styling - subtle and non-disruptive with responsive enhancements */
 code {
-  @apply rounded-md bg-ui-component-default p-1 text-sm text-low-contrast-text;
+  @apply rounded bg-ui-component-hover font-mono text-high-contrast-text;
+  /* Responsive padding */
+  padding: 0.125rem 0.375rem;
+  
+  /* Ensure proper line height integration with surrounding text */
+  line-height: 1.2;
+  /* Slightly smaller font size relative to surrounding text for better integration */
+  font-size: 0.875em;
+  /* Prevent line breaks within inline code to maintain readability */
+  white-space: nowrap;
+  /* Subtle visual distinction without being too prominent */
+  opacity: 0.95;
+  /* Smooth transitions for theme changes */
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+  /* Ensure proper vertical alignment with text */
+  vertical-align: baseline;
+  /* Slight letter spacing for better readability */
+  letter-spacing: 0.025em;
+  
+  /* Mobile responsive adjustments */
+  @media (max-width: 640px) {
+    padding: 0.1rem 0.3rem;
+    font-size: 0.8125em; /* Slightly smaller on mobile */
+    /* Allow breaking on mobile for very long inline code */
+    white-space: pre-wrap;
+    word-break: break-all;
+    /* Reduce letter spacing on mobile */
+    letter-spacing: 0.01em;
+  }
+  
+  /* Tablet adjustments */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    padding: 0.125rem 0.35rem;
+    font-size: 0.85em;
+  }
 }
+
+
+
+/* Code block styling with responsive enhancements */
+pre {
+  @apply relative rounded-lg bg-ui-component-default font-mono leading-relaxed overflow-x-auto;
+  /* Responsive padding and font sizing */
+  padding: 1rem;
+  font-size: 0.875rem;
+  
+  /* Ensure proper scrolling behavior */
+  white-space: pre;
+  /* Maintain proper spacing and line breaks */
+  word-wrap: normal;
+  /* Prevent word wrapping in code blocks */
+  
+  /* Mobile-first responsive design */
+  @media (max-width: 640px) {
+    padding: 0.75rem;
+    font-size: 0.8125rem; /* Slightly smaller on mobile */
+    border-radius: 0.5rem; /* Less rounded corners on mobile */
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    /* Ensure code blocks don't break mobile layout */
+    max-width: calc(100vw - 1rem);
+    /* Better touch scrolling on mobile */
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Tablet adjustments */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    padding: 0.875rem;
+    font-size: 0.8125rem;
+  }
+  
+  /* Desktop and larger screens */
+  @media (min-width: 1025px) {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Custom scrollbar styling for code blocks */
+  scrollbar-width: thin;
+  scrollbar-color: var(--subtle-borders-interactive) transparent;
+  
+  /* Enhanced mobile scrollbar */
+  @media (max-width: 640px) {
+    scrollbar-width: auto; /* Use default scrollbar width on mobile */
+  }
+}
+
+/* WebKit scrollbar styling for code blocks */
+pre::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background-color: var(--subtle-borders-interactive);
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background-color: var(--stronger-borders-interactive-focus-rings);
+}
+
+/* Code inside pre blocks should inherit the block styling */
+pre code {
+  @apply bg-transparent p-0 text-inherit;
+  /* Remove inline code styling when inside pre blocks */
+  border-radius: 0;
+  font-size: inherit;
+}
+
+/* Theme-aware syntax highlighting - override shiki default colors */
+/* Keywords (if, else, function, const, let, var, etc.) */
+pre .token.keyword,
+pre .token.boolean,
+pre .token.null,
+pre .token.undefined,
+pre code [data-theme] .token.keyword,
+pre code [data-theme] .token.boolean {
+  color: var(--syntax-keyword) !important;
+}
+
+/* Strings and template literals */
+pre .token.string,
+pre .token.template-string,
+pre .token.char,
+pre code [data-theme] .token.string,
+pre code [data-theme] .token.template-string {
+  color: var(--syntax-string) !important;
+}
+
+/* Comments */
+pre .token.comment,
+pre .token.prolog,
+pre .token.doctype,
+pre .token.cdata,
+pre code [data-theme] .token.comment {
+  color: var(--syntax-comment) !important;
+  font-style: italic;
+}
+
+/* Numbers */
+pre .token.number,
+pre code [data-theme] .token.number {
+  color: var(--syntax-number) !important;
+}
+
+/* Functions and method names */
+pre .token.function,
+pre .token.function-name,
+pre .token.method,
+pre code [data-theme] .token.function {
+  color: var(--syntax-function) !important;
+}
+
+/* Variables and identifiers */
+pre .token.variable,
+pre .token.identifier,
+pre code [data-theme] .token.variable {
+  color: var(--syntax-variable) !important;
+}
+
+/* Operators */
+pre .token.operator,
+pre .token.entity,
+pre .token.url,
+pre code [data-theme] .token.operator {
+  color: var(--syntax-operator) !important;
+}
+
+/* Punctuation */
+pre .token.punctuation,
+pre code [data-theme] .token.punctuation {
+  color: var(--syntax-punctuation) !important;
+}
+
+/* HTML/XML tags */
+pre .token.tag,
+pre .token.selector,
+pre code [data-theme] .token.tag {
+  color: var(--syntax-tag) !important;
+}
+
+/* HTML/XML attributes */
+pre .token.attr-name,
+pre .token.property,
+pre code [data-theme] .token.attr-name {
+  color: var(--syntax-attribute) !important;
+}
+
+/* Attribute values */
+pre .token.attr-value,
+pre code [data-theme] .token.attr-value {
+  color: var(--syntax-value) !important;
+}
+
+/* Shell/bash specific tokens */
+pre .token.builtin,
+pre .token.class-name,
+pre code [data-theme] .token.builtin {
+  color: var(--syntax-function) !important;
+}
+
+/* Regex patterns */
+pre .token.regex,
+pre .token.important,
+pre code [data-theme] .token.regex {
+  color: var(--syntax-string) !important;
+}
+
+/* Ensure all syntax highlighting respects theme transitions */
+pre .token,
+pre code [data-theme] .token {
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
 .transition-effect {
   @apply transition duration-200;
@@ -133,6 +353,18 @@ li {
 
   /* TODO: create color system for B/W or an accent (for buttons etc) */
   :root {
+    /* Syntax highlighting colors - mapped to theme variables */
+    --syntax-keyword: var(--primary);
+    --syntax-string: var(--success);
+    --syntax-comment: var(--muted-text);
+    --syntax-number: var(--info);
+    --syntax-function: var(--warning);
+    --syntax-variable: var(--high-contrast-text);
+    --syntax-operator: var(--high-contrast-text);
+    --syntax-punctuation: var(--low-contrast-text);
+    --syntax-tag: var(--primary);
+    --syntax-attribute: var(--info);
+    --syntax-value: var(--success);
     /* Light theme variables */
     --light-app-bg: #ffffff;
     --light-sidebar-bg: #f8f9fa;
