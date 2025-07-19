@@ -23,15 +23,19 @@ npm install -g @anthropic-ai/claude-code
 ```bash
 cat << 'EOF' >> ~/.zshrc
 
-# claude code
-export ANTHROPIC_BASE_URL=https://api.moonshot.cn/anthropic/
-export ANTHROPIC_API_KEY=$YOUR_API_KEY
-EOF
+# Claude Code
+export KIMI_API_KEY="YOUR_API_KEY"
+
+kimi() {
+  export ANTHROPIC_BASE_URL=https://api.moonshot.cn/anthropic/
+  export ANTHROPIC_API_KEY=$KIMI_API_KEY
+  claude $1
+}
 ```
-$YOUR_API_KEY 就是我们在环境准备阶段，在月之暗面后台申请的 API Key。
+YOUR_API_KEY 就是我们在环境准备阶段，在月之暗面后台申请的 API Key。
 
 ### 使用 claude-code-cli
 
 - 新建一个目录，进入该目录
-- 执行 `claude` 命令,第一次使用会需要登录 claude 平台，会自动跳转到浏览器进行登录。
-- 最后我们在终端启动 claude 就可以开始对话了。
+- 执行 `kimi` 命令,第一次使用会需要登录 claude 平台，会自动跳转到浏览器进行登录。
+- 最后我们在终端启动 `kimi` 命令就可以开始对话了。
